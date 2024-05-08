@@ -110,8 +110,9 @@ with open(csv_file, 'r') as file:
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 
         Here is the input and output image of csv file
-        
-```
+
+        ![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/RubeenaSulthana/ruby/assets/169050067/52fdd4ab-a753-40bf-9193-aa9c02cf3b92)
+
 
 ## histogram
 ```
