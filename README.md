@@ -193,14 +193,50 @@ This displays the histogram plot.
 
 
 ## task
-```
+This Python code defines a list of numbers from 0 to 9 (num). It then iterates over each number in this list.
+
 num = list(range(10))
+
+This line creates a list called num containing numbers from 0 to 9.
+
 previousNum = 0
+
+Initializes a variable called previousNum with the value 0.
+
 for i in num:
+
+This is a loop that iterates over each element in the list num.
+Inside the loop:
+
     sum = previousNum + i
+    Adds the current value of i to the previousNum and stores it in a variable called sum.
+    
     print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum))
+
+    Prints the current number 'i', the previous number 'previousNum', and their sum 'sum'.
     previousNum=i
-```
+    Prints the current number i, the previous number previousNum, and their sum sum.
+So, the code calculates the sum of each number in the list num with its previous number and prints them.
+## Output:
+Current Number 0Previous Number 0is 0
+
+Current Number 1Previous Number 0is 1
+
+Current Number 2Previous Number 1is 3
+
+Current Number 3Previous Number 2is 5
+
+Current Number 4Previous Number 3is 7
+
+Current Number 5Previous Number 4is 9
+
+Current Number 6Previous Number 5is 11
+
+Current Number 7Previous Number 6is 13
+
+Current Number 8Previous Number 7is 15
+
+Current Number 9Previous Number 8is 17
 
 ## videocp
 ```
