@@ -1,10 +1,16 @@
 ## boundingbox
-```
-import os
-import csv
-from PIL import Image, ImageDraw
+This Python script is designed to process a CSV file containing bounding box coordinates and associated image filenames. It then draws bounding boxes around objects in images and saves the annotated images with boxes overlaid, as well as cropped images of the individual objects.
 
+## 1.Libraries Used:
+The scripts imports neccesary modules:
 
+import os : Provides functions for interacting with the operating system.
+
+import csv : Allows reading and writing CSV files.
+
+from PIL import Image, ImageDraw : These are from the Python Imaging Library (PIL), which is used for opening, manipulating, and drawing on images.
+
+## Defining path
 csv_file = "/home/rubeena-sulthana/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/rubeena-sulthana/Downloads/7622202030987/"
 output_dir = "/home/rubeena-sulthana/Downloads/7622202030987_with_boxes"
