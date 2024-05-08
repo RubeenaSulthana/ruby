@@ -192,7 +192,7 @@ This displays the histogram plot.
 
 
 
-## task
+## Iterating the first 10 numbers
 This Python code defines a list of numbers from 0 to 9 (num). It then iterates over each number in this list.
 
 num = list(range(10))
@@ -238,34 +238,45 @@ Current Number 8Previous Number 7is 15
 
 Current Number 9Previous Number 8is 17
 
-## videocp
-```
+## web cam
+This Python code snippet utilizes the OpenCV library to capture video from a webcam (or other video input device) and display it in a window. 
+Let's break down the code step by step:
 
-# import the opencv library 
+1.import the opencv library 
+
 import cv2 
-  
-  
-# define a video capture object 
+
+2.define a video capture object (vid) by calling cv2.videocapture(0)
+
 vid = cv2.VideoCapture(0) 
-  
+
+3.Start an infinite loop to continuously capture and display frames:
+
 while(True): 
-      
-    # Capture the video frame 
-    # by frame 
+
+4. the function vid.read() captures a frame from the video and returns two values:ret,a boolean indicating whether a frame was successfully captured, and frame, the captured frame.
+   
     ret, frame = vid.read() 
   
-    # Display the resulting frame 
+5.Display the resulting frame 
+
     cv2.imshow('frame', frame) 
       
-    # the 'q' button is set as the 
-    # quitting button you may use any 
-    # desired button of your choice 
+6.The loop waits for a key press with cv2.waitKey(1).If the pressed key is 'q'.the loop breaks and the program ends.
+
     if cv2.waitKey(1) & 0xFF == ord('q'): 
+    
         break
   
-# After the loop release the cap object 
+7.vid.release() releases the video captured object, freeing the camera resources.
+
 vid.release() 
-# Destroy all the windows 
+
+8.cv2.DestroyAlltheWindows() closes all OpenCV windows.
+
 cv2.destroyAllWindows()
-```
+
+## Output
+
+
 
