@@ -109,6 +109,8 @@ with open(csv_file, 'r') as file:
         
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 ## here the input and output 
+![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/RubeenaSulthana/ruby/assets/169050067/459fc10a-b3eb-4a27-bb5e-77c8f4d7332d)
+
 ![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/RubeenaSulthana/ruby/assets/169050067/bf819736-3124-4882-9ce8-b63ec2eb7adb)
 
 
