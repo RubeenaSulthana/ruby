@@ -108,7 +108,7 @@ with open(csv_file, 'r') as file:
         full_image_with_boxes = draw_boxes(image, boxes)
         
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
-## Input
+## here the input and output 
 /home/rubeena-sulthana/Downloads/7622202030987/7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
 /home/rubeena-sulthana/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
@@ -117,8 +117,16 @@ with open(csv_file, 'r') as file:
 
 
 ## histogram
-```
-import numpy as np
+This code is a Python script using OpenCV (cv2) and matplotlib libraries to read an image, compute its histogram, and plot it.
+
+Let's break down the code step by step:
+
+## Imports:
+
+import numpy as np 
+
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
+
 import cv2 as cv
 from matplotlib import pyplot as plt
  
