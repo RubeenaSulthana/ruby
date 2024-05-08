@@ -146,6 +146,8 @@ from matplotlib import pyplot as plt
  
 img = cv.imread('/home/rubeena-sulthana/Desktop/experiment.s/ahad.jpeg')
 
+![ahad](https://github.com/RubeenaSulthana/ruby/assets/169050067/4e2f8328-a1d4-478a-a2e0-fc59fca20894)
+
 
 This line reads an image file named "ahad.jpeg" from the specified path.
 
