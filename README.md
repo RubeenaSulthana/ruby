@@ -146,20 +146,42 @@ from matplotlib import pyplot as plt
  
 img = cv.imread('/home/rubeena-sulthana/Desktop/experiment.s/ahad.jpeg')
 
+
 This line reads an image file named "ahad.jpeg" from the specified path.
 
 cv.imwrite("/home/rubeena-sulthana/Desktop/experiment.s/anki.png",img)
 
 This line writes the read image (img) into another file named "anki.png" at the specified path.
 
+## Assertion:
+
 assert img is not None, "file could not be read, check with os.path.exists()"
+
+This line checks if the image has been read successfully. If the image reading fails, it raises an AssertionError with the given message.
+
+## Histogram Calculation and Plotting:
+
 color = ('b','g','r')
+
+This line defines a tuple of colors to be used for plotting histograms for each channel: blue, green, and red.
+
 for i,col in enumerate(color):
+
  histr = cv.calcHist([img],[i],None,[256],[0,256])
+
+ This calculates the histogram of the image img for the current color channel (i), with 256 bins in the range 0 to 255.
+ 
  plt.plot(histr,color = col)
+ 
+ This plots the histogram using pyplot.plot(), where histr is the histogram data and col is the color corresponding to the channel.
+ 
  plt.xlim([0,256])
+
+ This sets the x-axis limit of the plot to be between 0 and 256, which represents the intensity values.
+ 
 plt.show()
-```
+This displays the histogram plot.
+
 
 ## task
 ```
