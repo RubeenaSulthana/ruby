@@ -111,6 +111,7 @@ with open(csv_file, 'r') as file:
 ## here the input and output 
 /home/rubeena-sulthana/Downloads/7622202030987/7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
+
 /home/rubeena-sulthana/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
 
@@ -128,10 +129,23 @@ import numpy as np
 NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
 
 import cv2 as cv
+
+ OpenCV is a library of programming functions mainly aimed at real-time computer vision.
+
 from matplotlib import pyplot as plt
+
+ Matplotlib is a plotting library for Python.
+ 
+ ## Reading and Writing the image:
  
 img = cv.imread('/home/rubeena-sulthana/Desktop/experiment.s/ahad.jpeg')
+
+This line reads an image file named "ahad.jpeg" from the specified path.
+
 cv.imwrite("/home/rubeena-sulthana/Desktop/experiment.s/anki.png",img)
+
+This line writes the read image (img) into another file named "anki.png" at the specified path.
+
 assert img is not None, "file could not be read, check with os.path.exists()"
 color = ('b','g','r')
 for i,col in enumerate(color):
