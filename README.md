@@ -111,7 +111,6 @@ with open(csv_file, 'r') as file:
 ## here the input and output 
 /home/rubeena-sulthana/Downloads/7622202030987/7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
-
 /home/rubeena-sulthana/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
 
