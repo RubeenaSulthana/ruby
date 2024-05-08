@@ -185,7 +185,10 @@ for i,col in enumerate(color):
  
 plt.show()
 This displays the histogram plot.
-## Output
+
+## Output:
+
+![anki2](https://github.com/RubeenaSulthana/ruby/assets/169050067/222a95eb-4374-4958-99a6-53e553d32297)
 
 
 
