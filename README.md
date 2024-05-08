@@ -111,7 +111,9 @@ with open(csv_file, 'r') as file:
 
         Here is the input and output image of csv file
 
-        ![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/RubeenaSulthana/ruby/assets/169050067/52fdd4ab-a753-40bf-9193-aa9c02cf3b92)
+        /home/rubeena-sulthana/Downloads/7622202030987/7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
+
+        /home/rubeena-sulthana/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
 
 
 ## histogram
