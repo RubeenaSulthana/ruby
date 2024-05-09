@@ -244,38 +244,63 @@ Let's break down the code step by step:
 
 1.import the opencv library 
 
-import cv2 
+import cv2
 
-2.define a video capture object (vid) by calling cv2.videocapture(0)
+2.Create a VideoCapture object to capture video from the default camera (camera index 0):
 
-vid = cv2.VideoCapture(0) 
+video = cv2.VideoCapture(0)
 
-3.Start an infinite loop to continuously capture and display frames:
+3.Check if the camera is opened successfully:
 
-while(True): 
+if (video.isOpened() == False):
 
-4. the function vid.read() captures a frame from the video and returns two values:ret,a boolean indicating whether a frame was successfully captured, and frame, the captured frame.
-   
-    ret, frame = vid.read() 
-  
-5.Display the resulting frame 
+print("Error reading video file")
 
-    cv2.imshow('frame', frame) 
-      
-6.The loop waits for a key press with cv2.waitKey(1).If the pressed key is 'q'.the loop breaks and the program ends.
+4.Get the resolution of the video frames:
 
-    if cv2.waitKey(1) & 0xFF == ord('q'): 
-    
+frame_width = int(video.get(3))
+
+frame_height = int(video.get(4))
+
+5.Define the size of the video frames:
+
+size = (frame_width, frame_height)
+
+6.Create a VideoWriter object to save the video:
+
+result = cv2.VideoWriter('a.avi',
+cv2.VideoWriter_fourcc(*'MJPG'),
+
+7.Enter a loop to read frames from the camera until the user presses 's' to stop:
+
+while(True): ret, frame = video.read()
+
+if ret == True:  
+
+8.Write the captured frame to the output video file:
+
+    result.write(frame)
+
+9.Display the frame in a window named 'Frame':
+
+    cv2.imshow('Frame', frame)
+
+10.Check if the user pressed 's' to stop capturing:
+
+    if cv2.waitKey(1) & 0xFF == ord('s'): 
         break
-  
-7.vid.release() releases the video captured object, freeing the camera resources.
 
-vid.release() 
+else: break 11.Release the VideoCapture and VideoWriter objects after exiting the loop:
 
-8.cv2.DestroyAlltheWindows() closes all OpenCV windows.
+video.release() result.release()
+
+12.Close all OpenCV windows:
 
 cv2.destroyAllWindows()
 
+13.Print a message indicating that the video was successfully saved:
+
+print("The video was successfully saved")
 ## Output
 https://github.com/RubeenaSulthana/ruby/assets/169050067/e3a4e309-627e-4c1b-b65a-3d1d21647f9b
 
