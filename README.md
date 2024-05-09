@@ -278,5 +278,4 @@ cv2.destroyAllWindows()
 
 ## Output
 
-[Screencast from 08-05-24 02:03:39 PM IST.webm](https://github.com/RubeenaSulthana/ruby/assets/169050067/21ed6513-2e0c-4c61-ba1d-b3c35e43e048)
 
