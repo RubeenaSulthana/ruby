@@ -277,5 +277,5 @@ vid.release()
 cv2.destroyAllWindows()
 
 ## Output
-
+https://github.com/RubeenaSulthana/ruby/assets/169050067/e3a4e309-627e-4c1b-b65a-3d1d21647f9b
 
