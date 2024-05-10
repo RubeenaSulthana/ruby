@@ -11,8 +11,8 @@ args = parser.parse_args()
 image_dir = args.image_path
 csv_file = args.csv
 output_dir = args.out_dir
-os.makedirs(output_dir, exist_ok=True)
 
+os.makedirs(output_dir, exist_ok=True)
 
 def draw_boxes(image, boxes):
     draw = ImageDraw.Draw(image)
