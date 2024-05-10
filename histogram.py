@@ -7,8 +7,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('image', help='enter the image path')
 parser.add_argument('output', help='enter the output path')
 
-args = vars(parser.parse_args())
-image = cv2.imread(args['image'])
+args = (parser.parse_args())
+image =cv2.imread(args.image)
 assert image is not None, "file could not be read, check with os.path.exists()"
 color = ('b','g','r')
 for i,col in enumerate(color):
